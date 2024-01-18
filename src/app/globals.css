@@ -15,7 +15,7 @@ img {
   height: auto;
   transition: 0.3s ease all;
   -o-transition: 0.3s ease all;
-  -moz-transform: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
   -ms-transition: 0.3s ease all;
 }

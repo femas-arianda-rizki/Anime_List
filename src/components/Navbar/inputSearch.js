@@ -7,17 +7,17 @@ const InputSearch = () => {
   const searchRef = useRef();
   const router = useRouter();
 
-  // const handleSearch = (event) => {
-  //   const keyword = searchRef.current.value;
+  const handleSearch = (event) => {
+    const keyword = searchRef.current.value;
 
-  //   if (!keyword) return
+    if (!keyword) return
 
-  //   if (event.key === "Enter" || event.type === "click") {
-  //     event.preventDefault();
+    if (event.key === "Enter" || event.type === "click") {
+      event.preventDefault();
       
-  //     router.push(`/search/${keyword}`);
-  //   }
-  // };
+      router.push(`/search/${keyword}`);
+    }
+  };
 
   return (
     <div className="relative">

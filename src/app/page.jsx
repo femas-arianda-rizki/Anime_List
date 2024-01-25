@@ -6,7 +6,7 @@
 //   )
 // }
 import AnimeList from "@/components/AnimeList";
-import Header from "@/components/AnimeList/header";
+import Header from "@/components/AnimeList/Header";
 
 const Page = async () => {
   const response = await fetch(
@@ -20,7 +20,7 @@ const Page = async () => {
       <section>
         <Header
           title="Paling Populer"
-          linkHref="/popular"
+          linkHref="/Populer"
           linkTitle="Lihat Semua"
         />
         <AnimeList api={topAnime} />

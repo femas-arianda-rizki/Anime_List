@@ -34,7 +34,7 @@ const Pagination = ({ page, lastpage, setPage }) => {
       {page >= lastpage ? null : (
         <button
           onClick={handleNextPage}
-          className="transition-all text-color-accent"
+          className="transition-all hover:text-color-accent"
         >
           Next
         </button>

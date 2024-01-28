@@ -1,4 +1,4 @@
-import { getAnimeResponse } from "@/app/libs/api-libs";
+import { getAnimeResponse } from "@/libs/api-libs";
 import VideoPlayer from "@/components/Utilities/VideoPlayer";
 import Image from "next/image";
 
@@ -19,15 +19,24 @@ const Page = async ({ params: { id } }) => {
           <h3>Peringkat</h3>
           <p>{anime.data.rank} </p>
         </div>
-        <div className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2"S>
+        <div
+          className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2"
+          S
+        >
           <h3>Skor</h3>
           <p>{anime.data.score} </p>
         </div>
-        <div className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2"S>
+        <div
+          className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2"
+          S
+        >
           <h3>Anggota</h3>
           <p>{anime.data.members} </p>
         </div>
-        <div className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2"S>
+        <div
+          className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2"
+          S
+        >
           <h3>Episode</h3>
           <p>{anime.data.episodes} </p>
         </div>

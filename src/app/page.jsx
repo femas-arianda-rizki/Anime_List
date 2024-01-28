@@ -11,8 +11,11 @@ import { getAnimeResponse, getNestedAnimeResponse } from "@/libs/api-libs";
 
 const Page = async () => {
   const topAnime = await getAnimeResponse("top/anime", "Limit=8");
-  const recomendedAnime = await getNestedAnimeResponse("recomendations/anime", "entry")
-  console.log(recomendedAnime)
+  let recomendedAnime = await getNestedAnimeResponse(
+    "recomendations/anime",
+    "entry"
+  );
+  recomendedAnime = { data: recomendedAnime.slice(8, 4) };
 
   return (
     <>
@@ -26,7 +29,7 @@ const Page = async () => {
       </section>
       <section>
         <Header title="Rekomendasi" />
-        <AnimeList api={topAnime} />
+        <AnimeList api={recomendedAnime} />
       </section>
     </>
   );

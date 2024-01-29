@@ -9,6 +9,7 @@ const Navbar = () => {
           ANIME LIST
         </Link>
         <InputSearch />
+        <Link href="/api/auth/signin" className="">Sign In</Link>
       </div>
     </header>
   );

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import InputSearch from "./InputSearch";
+import UserActionButton from "./UserActionButton";
+import { User } from "@phosphor-icons/react/dist/ssr";
 
 const Navbar = () => {
   return (
@@ -9,7 +11,7 @@ const Navbar = () => {
           ANIME LIST
         </Link>
         <InputSearch />
-        <Link href="/api/auth/signin" className="">Sign In</Link>
+        <UserActionButton/>
       </div>
     </header>
   );

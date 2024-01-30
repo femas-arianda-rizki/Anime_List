@@ -1,17 +1,10 @@
-// export default function Home() {
-//   return (
-//     <div>
-//       <h1>ANIMELIST</h1>
-//     </div>
-//   )
-// }
-import AnimeList from "@/components/AnimeList";
-import Header from "@/components/AnimeList/Header";
+import AnimeList from "../components/AnimeList";
+import Header from "../components/AnimeList/Header";
 import {
   getAnimeResponse,
   getNestedAnimeResponse,
   reproduce,
-} from "@/libs/api-libs";
+} from "../libs/api-libs";
 
 const Page = async () => {
   const topAnime = await getAnimeResponse("top/anime", "Limit=8");
